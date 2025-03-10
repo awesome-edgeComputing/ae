@@ -16,7 +16,7 @@ AE is a powerful multi-language command-line tool designed for managing edge com
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-org/ae.git
+git clone https://github.com/awesome-edgeComputing/ae.git
 cd ae
 
 # Install dependencies and build
@@ -76,4 +76,4 @@ make build-windows-amd64
 
 ## License
 
-MIT License
+Apache License 2.0 License
