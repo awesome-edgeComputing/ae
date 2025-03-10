@@ -1,0 +1,80 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.env
+.venv/
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+*.egg-info/
+.eggs/
+*.egg
+dist/
+build/
+develop-eggs/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.whl
+.installed.cfg
+MANIFEST
+
+# PyInstaller
+*.manifest
+*.spec
+*.tmp
+
+# Go
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+go.work
+
+# Rust
+target/
+**/*.rs.bk
+Cargo.lock
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+.env
+
+# Project specific
+dist/
+.venv/
+build/
+*.tmp
+scripts/package/package
+
+# Binary files
+dist/ae_darwin_*
+dist/ae_linux_*
+dist/ae_windows_*
+dist/esk_darwin_*
+dist/esk_linux_*
+dist/esk_windows_*
+dist/ei2_darwin_*
+dist/ei2_linux_*
+dist/ei2_windows_*
+dist/sys_darwin_*
+dist/sys_linux_*
+dist/sys_windows_* 
