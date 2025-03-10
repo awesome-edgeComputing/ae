@@ -1,0 +1,25 @@
+[target.x86_64-unknown-linux-gnu]
+linker = "x86_64-linux-musl-gcc"
+rustflags = [
+    "-C", "target-feature=+crt-static",
+    "-C", "link-arg=-no-pie",
+    "-C", "link-args=-L/usr/local/Cellar/musl-cross/0.9.9_2/libexec/lib/gcc/x86_64-linux-musl/9.2.0",
+    "-C", "link-args=-L/usr/local/Cellar/musl-cross/0.9.9_2/libexec/x86_64-linux-musl/lib"
+]
+
+[target.aarch64-unknown-linux-gnu]
+linker = "aarch64-linux-musl-gcc"
+rustflags = [
+    "-C", "target-feature=+crt-static",
+    "-C", "link-arg=-no-pie",
+    "-C", "link-args=-L/usr/local/Cellar/musl-cross/0.9.9_2/libexec/lib/gcc/aarch64-linux-musl/9.2.0",
+    "-C", "link-args=-L/usr/local/Cellar/musl-cross/0.9.9_2/libexec/aarch64-linux-musl/lib",
+    "-C", "link-args=-lc"
+]
+
+[target.x86_64-unknown-linux-musl]
+linker = "x86_64-linux-musl-gcc"
+rustflags = ["-C", "target-feature=+crt-static"]
+
+[build]
+target = "x86_64-unknown-linux-musl"
